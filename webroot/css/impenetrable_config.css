@@ -1,0 +1,9 @@
+
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        max-width: unset;
+    }
+
+
+.bg-success {
+    background-color: #009f1a !important;
+}

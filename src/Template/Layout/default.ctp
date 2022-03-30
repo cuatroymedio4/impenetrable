@@ -27,32 +27,58 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
-
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font-awesome -->
+    <?= $this->Html->css('font-awesome/css/font-awesome.min.css') ?>
+    <?= $this->Html->css('all.css') ?>
+
+    <!-- Libraries Stylesheet -->
+    <?= $this->Html->css('lib/animate/animate.min.css') ?>
+    <?= $this->Html->css('lib/owlcarousel/assets/owl.carousel.min.css') ?>
+    <?= $this->Html->css('lib/lightbox/css/lightbox.min.css') ?>
+
+
+
+    <!-- Bootstrap modifies? -->
+    <?= $this->Html->css('bootstrap_template.min.css') ?>
+    <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->css('impenetrable_config.css') ?>
+
+
+
+
 </head>
-<body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
-    </nav>
+<body id="body">
+
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+
+    <div class="container-xxl bg-white p-0">
         <?= $this->fetch('content') ?>
     </div>
     <footer>
     </footer>
+
+    <!-- JavaScript Libraries -->
+
+    <?= $this->Html->script('jquery-3.6.0.min.js') ?>
+    <?= $this->Html->script('bootstrap.bundle.min.js') ?>
+
+    <?= $this->Html->script('lib/wow/wow.min.js') ?>
+    <?= $this->Html->script('lib/easing/easing.min.js') ?>
+    <?= $this->Html->script('lib/waypoints/waypoints.min.js') ?>
+    <?= $this->Html->script('lib/owlcarousel/owl.carousel.min.js') ?>
+    <?= $this->Html->script('lib/isotope/isotope.pkgd.min.js') ?>
+    <?= $this->Html->script('lib/lightbox/js/lightbox.min.js') ?>
+
+    <?= $this->Html->script('template_main.js') ?>
+
 </body>
 </html>
