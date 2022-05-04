@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\Event\EventInterface;
 
 /**
  * Application Controller
@@ -46,10 +47,57 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
 
+
+        $this->loadComponent('Auth', [
+            'authorize' => ['Controller'],
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'password'
+                    ],
+                    'finder' => 'auten'
+                ]
+            ],
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+            'loginRedirect' => [
+                'controller' => 'Admin',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ]
+        ]);
+
         /*
          * Enable the following component for recommended CakePHP security settings.
          * see https://book.cakephp.org/3/en/controllers/components/security.html
          */
         //$this->loadComponent('Security');
+    }
+
+
+    public function beforeFilter(EventInterface $event)
+    {
+        $this->set('current_user', $this->Auth->user());
+    }
+
+    /**
+     * @param $user
+     * @return bool
+     */
+    public function isAuthorized($user)
+    {
+        if(isset($user['role']) and ($user['role'] === 'admin'))
+        {
+            return true;
+        }
+
+        return false;
+
     }
 }

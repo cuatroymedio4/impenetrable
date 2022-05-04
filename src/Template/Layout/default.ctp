@@ -14,7 +14,7 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'El Impenetrable: PICTO-UNNE 2019-00028';
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,8 +37,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Font-awesome -->
-    <?= $this->Html->css('font-awesome/css/font-awesome.min.css') ?>
-    <?= $this->Html->css('all.css') ?>
+    <?= $this->Html->css('fontawesome6/css/all.css') ?>
+
+    <?= $this->Html->css('flaticon.css') ?>
 
     <!-- Libraries Stylesheet -->
     <?= $this->Html->css('lib/animate/animate.min.css') ?>
@@ -52,6 +53,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('style.css') ?>
     <?= $this->Html->css('impenetrable_config.css') ?>
 
+    <?= $this->Html->script('jquery-3.6.0.min.js') ?>
+    <?= $this->Html->script('bootstrap.bundle.min.js') ?>
+
 
 
 
@@ -63,13 +67,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <div class="container-xxl bg-white p-0">
         <?= $this->fetch('content') ?>
     </div>
-    <footer>
-    </footer>
+
+    <?= $this->element('footer')?>
 
     <!-- JavaScript Libraries -->
 
-    <?= $this->Html->script('jquery-3.6.0.min.js') ?>
-    <?= $this->Html->script('bootstrap.bundle.min.js') ?>
+
 
     <?= $this->Html->script('lib/wow/wow.min.js') ?>
     <?= $this->Html->script('lib/easing/easing.min.js') ?>
@@ -79,6 +82,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('lib/lightbox/js/lightbox.min.js') ?>
 
     <?= $this->Html->script('template_main.js') ?>
+
 
 </body>
 </html>

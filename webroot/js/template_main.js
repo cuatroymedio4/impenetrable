@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,14 +24,14 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-    
-    
+
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
     const showClass = "show";
-    
+
     $(window).on("load resize", function() {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
@@ -52,8 +52,8 @@
             $dropdown.off("mouseenter mouseleave");
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -104,6 +104,55 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+
 })(jQuery);
+
+
+
+//ESta funcion setea a activo el li
+
+(function($) {
+    $.get = function(key)   {
+        key = key.replace(/[\[]/, '\\[');
+        key = key.replace(/[\]]/, '\\]');
+        var pattern = "[\\?&]" + key + "=([^&#]*)";
+        var regex = new RegExp(pattern);
+        var url = unescape(window.location.href);
+        var results = regex.exec(url);
+        if (results === null) {
+            return null;
+        } else {
+            return results[1];
+        }
+    }
+})(jQuery);
+
+$(function() {
+
+    var category = $.get("Categoria");
+    var context = $.get("Context");
+
+    var nombre_li = null;
+
+    if (context === null || context === undefined){
+         nombre_li = "li_" + category;
+
+    } else {
+         nombre_li = "li_admin_" + category;
+
+    }
+    $("#" + nombre_li).addClass("active")
+
+
+});
+
+
+
+
+
+
+
+
+
+
 
