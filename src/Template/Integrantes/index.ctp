@@ -10,9 +10,15 @@
 
         <div class="row py-5 landing-inte-back">
             <div class="col-xs-5 col-md-5 col-lg-5 valign-center" style="text-align: center; display:table">
-                <h1 class="wow zoomIn" style="display: table-cell; vertical-align: middle; color: #198754; font-size: 4.5rem;">
+                <h1 class="wow zoomIn" style="vertical-align: middle; color: #198754; margin-top: 30%;">
                     ¿Quiénes Somos?
                 </h1>
+
+                <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
+                   Somos un grupo de investigación constituidos por miembros que realizan sus actividades en el
+                    CONICET, en la Universidad Nacional del Nordeste y en la Universidad Nacional de Buenos Aires.
+                </p>
+
             </div>
             <div class="col-xs-7 col-md-7 col-lg-7 valign-center">
                 <?=  $this->Html->image('cientifico.svg', ['alt' => 'CakePHP', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>

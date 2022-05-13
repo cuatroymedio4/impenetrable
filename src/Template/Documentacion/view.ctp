@@ -86,12 +86,16 @@
 
 
                                 <td class="actions">
+                                    <div class="col-sm-12" style="margin-bottom: 5px;">
                                         <?= $this->Html->link(__('Editar'), ['action' => 'edit','?' =>
                                             ['Categoria' => 'Documentacion', 'Context' => 'Admin', 'id' => $doc->iddocumentacion]],
-                                            ['class' => 'btn btn-sm btn-warning']) ?>
+                                            ['class' => 'btn btn-block btn-sm btn-warning']) ?>
+                                    </div>
+                                    <div class="col-sm-12" style="margin-bottom: 5px;">
                                         <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $doc->iddocumentacion],
                                             ['confirm' => __('Eliminar el registro: {0}?', $doc->iddocumentacion),
-                                                'class' => 'btn btn-sm  btn-danger']) ?>
+                                                'class' => 'btn btn-block btn-sm  btn-danger']) ?>
+                                    </div>
 
 
                                 </td>

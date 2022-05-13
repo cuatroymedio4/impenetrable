@@ -57,6 +57,7 @@
                                     <td><?= h($doc->title) ?></td>
                                     <td><?= h($doc->description) ?></td>
                                     <td><?= $this->Number->format(($doc->size / 1024))?></td>
+
                                     <?php if($doc->format == 'application/pdf'): ?>
 
                                         <td><?= $this->Html->image('pdf.png', ['pathPrefix' => '/img/icons/', 'class' => 'img',
