@@ -81,7 +81,7 @@ class AppController extends Controller
     }
 
 
-    public function beforeFilter(EventInterface $event)
+    public function beforeFilter(Event $event)
     {
         $this->set('current_user', $this->Auth->user());
     }

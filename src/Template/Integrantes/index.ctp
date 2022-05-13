@@ -28,15 +28,16 @@
         </div>
 
     <div class="container my-5 py-5 px-lg-5">
-        <div class="row g-5 py-5">
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+        <div class="row g-5 py-5 d-flex justify-content-center text-center">
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank" rel="noopener">
                                 <img class="foto img-thumbnail img-circle"
                                      src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_maria_laura_salinas-150x150.jpg"
-                                     alt="Salinas, María Laura">
+                                     alt="Salinas, María Laura" style="height: 165px;">
                             </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Salinas, María Laura</h4>
@@ -65,7 +66,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -101,7 +102,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -138,7 +139,7 @@
 
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -174,7 +175,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -210,7 +211,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -245,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -279,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -314,21 +315,20 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
                             <img class="foto img-thumbnail img-circle"
                                  src="/impenetrable/webroot/img/integrantes/guarino.jpeg"
-                                 alt="Guarino, graciela" style="height: 165px;">
+                                 alt="Guarino, graciela" style="height: 165px; width: 165px;">
                             </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Guarino, Graciela</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm"></p>
-
+                                <p class="text-success font-size-sm">Sin registro</p>
                                 <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
                                     ['controller' => '', 'action' => '', '?' =>
                                         ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
@@ -350,7 +350,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -363,7 +363,7 @@
                                 <h4 style="color: var(--primary)">Echarri, Fabio</h4>
                                 <p class="text-secondary mb-1">Investigador Colaborador</p>
                                 <p class="text-muted font-size-sm">Investigador UNNE</p>
-                                <p class="text-success font-size-sm"></p>
+                                <p class="text-success font-size-sm">Sin registro</p>
 
                                 <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
                                     ['controller' => '', 'action' => '', '?' =>
@@ -386,7 +386,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -399,7 +399,7 @@
                                 <h4 style="color: var(--primary)">Nuñez Camelino, María</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm"></p>
+                                <p class="text-success font-size-sm">Sin registro</p>
 
                                 <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
                                     ['controller' => '', 'action' => '', '?' =>
@@ -422,7 +422,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -435,7 +435,7 @@
                                 <h4 style="color: var(--primary)">Barrios, Paola</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm"></p>
+                                <p class="text-success font-size-sm">Sin registro</p>
 
                                 <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
                                     ['controller' => '', 'action' => '', '?' =>
@@ -459,7 +459,7 @@
 
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -495,7 +495,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -530,7 +530,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3 valign-center col-left">
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
@@ -569,7 +569,8 @@
 
 
     </div>
-</div>
+
+    </div>
 
 
 

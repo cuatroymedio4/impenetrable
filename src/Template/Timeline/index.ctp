@@ -53,13 +53,13 @@
 
                                 <td class="actions">
                                     <div class="col-sm-12" style="margin-bottom: 5px;">
-                                        <?= $this->Html->link(__('Editar'), ['action' => 'editUser','?' =>
-                                            ['Accion' => 'Editar Usuarios', 'Categoria' => 'Usuarios', 'id' => $time->idtimeline]],
+                                        <?= $this->Html->link(__('Editar'), ['action' => 'edit','?' =>
+                                            ['Accion' => 'Editar Timeline', 'Categoria' => 'Timeline', 'Context' => 'Admin', 'id' => $time->idtimeline]],
                                             ['class' => 'btn btn-block btn-warning']) ?>
                                     </div>
                                     <div class="col-sm-12">
-                                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'deleteUser', $time->idtimeline],
-                                            ['confirm' => __('Eliminar el registro: {0}?', $time->idtimeline . ' ' . $time->idtimeline),
+                                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $time->idtimeline],
+                                            ['confirm' => __('Eliminar el registro: {0}?', $time->idtimeline),
                                                 'class' => 'btn btn-block btn-danger']) ?>
                                     </div>
 

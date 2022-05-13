@@ -3,19 +3,22 @@
     <div class="container py-1 px-lg-5">
         <div class="owl-carousel testimonial-carousel">
 
-            <div class="testimonial-item bg-transparent border text-white">
+            <?php foreach ($slider_home as $sld): ?>
+                <div class="testimonial-item bg-transparent border text-white">
 
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 slider-home-item" src="img/fotos/el-impenetrable.jpg">
+                    <div class="d-flex align-items-center">
+                        <?= $this->Html->image(h($sld->photo), ['pathPrefix' => '/img/slider/', 'class' => 'img-fluid flex-shrink-0 slider-home-item',
+                            'style' => ['height: 350px']]); ?>
 
+                    </div>
+                    <div class="ps-3">
+                        <h6 class="text-white mb-1" style="margin-top: 7px;"> <?= h($sld->titulo) ?></h6>
+                        <small><?= h($sld->descripcion) ?></small>
+                    </div>
                 </div>
-                <div class="ps-3">
-                    <h6 class="text-white mb-1">Meandros del Río Téuco-Bermejo</h6>
-                    <small>Una vista áerea de la formación meandrosa del curso del río Teuco-Bermejo en la localidad de Juan José Castellí.</small>
-                </div>
-            </div>
 
-            <div class="testimonial-item bg-transparent border text-white">
+            <?php endforeach; ?>
+            <!--<div class="testimonial-item bg-transparent border text-white">
 
                 <div class="d-flex align-items-center">
                     <img class="img-fluid flex-shrink-0 slider-home-item" src="img/fotos/img-2.jpeg">
@@ -35,8 +38,7 @@
                     <h6 class="text-white mb-1">Meandros del Río Téuco-Bermejo</h6>
                     <small>Una vista áerea de la formación meandrosa del curso del río Teuco-Bermejo en la localidad de Nueva Pompeya.</small>
                 </div>
-            </div>
-
+            </div>-->
         </div>
     </div>
 </div>

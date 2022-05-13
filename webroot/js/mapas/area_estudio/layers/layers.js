@@ -1,21 +1,25 @@
 var wms_layers = [];
 
 
-        var lyr_esristreet_0 = new ol.layer.Tile({
+
+var lyr_esristreet_0 = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{attribution: 'Tiles &copy; CartoDB'});
+
+        /*var lyr_esristreet_0 = new ol.layer.Tile({
             'title': 'esri street',
             'type': 'base',
             'opacity': 1.000000,
-
-
             source: new ol.source.XYZ({
     attributions: ' ',
                 url: 'http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}'
 
             })
-        });
+        });*/
+
+
 var format_PN_limite_Project_1 = new ol.format.GeoJSON();
 var features_PN_limite_Project_1 = format_PN_limite_Project_1.readFeatures(json_PN_limite_Project_1,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+
 var jsonSource_PN_limite_Project_1 = new ol.source.Vector({
     attributions: ' ',
 });

@@ -5,11 +5,9 @@ var map = L.map('map', {
     zoomControl:true,
     maxZoom:28,
     minZoom:1,
-    center: [-26, -61],
-    zoom: 7
+    center: [-25.602, -61.208],
+    zoom: 8
 });
-
-
 
 
 
@@ -24,10 +22,20 @@ function setBounds() {
 }
 
 
-L.tileLayer('http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
-    {foo: 'bar', attribution: '&copy; <a href="#">NatGeo</a> contributors'}).addTo(map);
+/*L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+    {attribution: '&copy; <a href="#">NatGeo</a> contributors'}).addTo(map);*/
 
+/*L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    maxZoom: 17,
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+}).addTo(map);*/
 
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+    maxZoom: 16
+}).addTo(map);
+
+//L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{attribution: 'Tiles &copy; CartoDB'}).addTo(map);
 
 
 

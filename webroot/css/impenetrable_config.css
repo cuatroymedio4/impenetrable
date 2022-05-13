@@ -71,6 +71,19 @@ h1, h2, h3, h4, h5{
 }
 
 
+.btn-secondary {
+    color: #000;
+    background-color: #bbbbbb;
+    border-color: #bbbbbb;
+}
+
+.btn-secondary:hover {
+    color: #000;
+    background-color: #888888;
+    border-color: #888888;
+}
+
+
 
 .nav-items{
     font-weight: 560;
@@ -120,6 +133,10 @@ h1, h2, h3, h4, h5{
 .padding-top-bottom-20{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.mg-card{
+    margin-right: 30px;
 }
 
 
@@ -712,5 +729,11 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
     background-color: #ffffff;
+}
+
+/* HOVERS */
+
+.title-hover:hover{
+    font-size: xxx-large;
 }
 

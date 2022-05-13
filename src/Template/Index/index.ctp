@@ -114,7 +114,13 @@
 <!-- Service End -->
 
 
-<?= $this->element('/index/slider-index')?>
+
+<?php if ($slider_count >= 3): ?>
+    <?= $this->element('/index/slider-index')?>
+<?php endif; ?>
+
+
+
 
 
 

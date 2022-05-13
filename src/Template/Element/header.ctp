@@ -29,7 +29,7 @@
                 </div>
 
                 <?=  $this->Html->link(
-                    'Timeline',
+                    'Línea Histórica',
                     ['controller' => 'Timeline', 'action' => 'view', '?' => ['Categoria' => 'Timeline']],
                     ['class' => 'dnav-item nav-link', 'id' => "li_Timeline"]
                 );
@@ -42,7 +42,12 @@
                 );
                 ?>
 
-                <a href="service.html" class="nav-item nav-link">Documentación</a>
+                <?=  $this->Html->link(
+                    'Documentación',
+                    ['controller' => 'Documentacion', 'action' => 'index', '?' => ['Categoria' => 'Documentacion']],
+                    ['class' => 'dnav-item nav-link', 'id' => "li_Documentacion"]
+                );
+                ?>
                 <a href="project.html" class="nav-item nav-link">Cartografía</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>

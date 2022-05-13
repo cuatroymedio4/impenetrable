@@ -20,28 +20,53 @@
                 );
                 ?>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_Proyecto">Otra cosa</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_Configuraciones">Configuraciones</a>
                     <div class="dropdown-menu m-0">
                         <?=  $this->Html->link(
-                            'Objetivos',
-                            ['controller' => 'Proyecto', 'action' => 'Objetivos', '?' => ['Categoria' => 'Proyecto']],
+                            'Slider Home',
+                            ['controller' => 'Configuraciones', 'action' => 'viewImageSlider', '?' => ['Categoria' => 'Configuraciones', 'Context' => 'Admin']],
                             ['class' => 'dropdown-item']);
                         ?>
 
-                        <a href="testimonial.html" class="dropdown-item">Fundamentación</a>
-                        <a href="team.html" class="dropdown-item">Lineas de Investigación</a>
-                        <a href="testimonial.html" class="dropdown-item">Fuentes</a>
                     </div>
                 </div>
 
-                <?=  $this->Html->link(
-                    'Timeline',
-                    ['controller' => 'Timeline', 'action' => 'index', '?' => ['Categoria' => 'Timeline', 'Context' => 'Admin']],
-                    ['class' => 'dnav-item nav-link', 'id' => "li_admin_Timeline"]
-                );
-                ?>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_Timeline">Timeline</a>
+                    <div class="dropdown-menu m-0">
+                        <?=  $this->Html->link(
+                            'Lista de eventos',
+                            ['controller' => 'Timeline', 'action' => 'index', '?' => ['Categoria' => 'Timeline', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
 
-                <a href="service.html" class="nav-item nav-link">Documentación</a>
+                        <?=  $this->Html->link(
+                            'Nuevo evento',
+                            ['controller' => 'Timeline', 'action' => 'add', '?' => ['Categoria' => 'Timeline', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_admin_Documentacion">Documentación</a>
+                    <div class="dropdown-menu m-0">
+                        <?=  $this->Html->link(
+                            'Lista de Archivos',
+                            ['controller' => 'Documentacion', 'action' => 'view', '?' => ['Categoria' => 'Documentacion', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                        <?=  $this->Html->link(
+                            'Nuevo Archivo',
+                            ['controller' => 'Documentacion', 'action' => 'add', '?' => ['Categoria' => 'Documentacion', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                    </div>
+                </div>
+
                 <a href="project.html" class="nav-item nav-link">Cartografía</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
