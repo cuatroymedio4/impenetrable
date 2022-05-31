@@ -19,9 +19,14 @@
                     <div class="link-widget footer-widget">
                         <div class="footer-title">Accesos rápidos</div>
                         <ul class="link-list">
-                            <li><a href="?p=home">Inicio</a></li>
-                            <li><a href="?p=home#ejes">Ejes</a></li>
-                            <li><a href="?p=contact">Contacto</a></li>
+
+                            <li>
+                                <?= $this->Html->link(__('Inicio'), ['controller' => 'index', 'action' => 'index']) ?>
+                            </li>
+
+                            <li><a href="?p=home#ejes">Línea Histórica</a></li>
+                            <li><a href="?p=contact">Integrantes</a></li>
+                            <li><a href="?p=contact">Documentación</a></li>
                             <!--<li><a href="#">Future Team</a></li>-->
                         </ul>
                     </div>
@@ -29,19 +34,16 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="event-widget footer-widget">
-                        <div class="footer-title">Talleres PUE</div>
+                        <div class="footer-title">Trabajos de Campo</div>
                         <div class="single-event">
-                            <div class="link"><a href="?p=pue-rc3">Diálogos entre agentes de archivos y usuarios</a></div>
-                            <div class="text"><i class="flaticon-small-calendar"></i>28 de agosto 2019</div>
+                            <div class="link"><a href="#">1ra Salida a Campo</a></div>
+                            <div class="text"><i class="flaticon-small-calendar"></i>1 de marzo 2022</div>
                         </div>
                         <div class="single-event">
-                            <div class="link"><a href="?p=pue-rc2">Conferencia <em>Reflexiones sobre el Patrimonio Iberoamericano</em></a></div>
-                            <div class="text"><i class="flaticon-small-calendar"></i>11 de abril 2019</div>
+                            <div class="link"><a href="#">2da Salida a Campo: <em></em></a></div>
+                            <div class="text"><i class="flaticon-small-calendar"></i>del 1 al 3 de junio de 2022</div>
                         </div>
-                        <div class="single-event">
-                            <div class="link"><a href="?p=pue-rc1">Seminario-taller: <em>Introducción al análisis y la investigación de políticas públicas</em></a></div>
-                            <div class="text"><i class="flaticon-small-calendar"></i>20 y 21 de marzo; 10 de abril 2017</div>
-                        </div>
+
                     </div>
                 </div>
 

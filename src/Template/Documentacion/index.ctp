@@ -12,7 +12,6 @@
                 <h1 class="title-hover wow zoomIn" style="vertical-align: middle; color: #198754; margin-top: 30%;">
                     Documentación
                 </h1>
-
                 <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
                     En esta sección ponemos a disposición toda la documentación pertinente al desarrollo del Proyecto
                     de Investigación.

@@ -25,6 +25,14 @@
                         <a href="testimonial.html" class="dropdown-item">Fundamentación</a>
                         <a href="team.html" class="dropdown-item">Lineas de Investigación</a>
                         <a href="testimonial.html" class="dropdown-item">Fuentes</a>
+
+                        <?=  $this->Html->link(
+                            'Integrantes',
+                            ['controller' => 'Integrantes', 'action' => 'index', '?' => ['Categoria' => 'Integrantes']],
+                            ['class' => 'dropdown-item']
+                             );
+                        ?>
+
                     </div>
                 </div>
 
@@ -36,9 +44,9 @@
                 ?>
 
                 <?=  $this->Html->link(
-                    'Integrantes',
-                    ['controller' => 'Integrantes', 'action' => 'index', '?' => ['Categoria' => 'Integrantes']],
-                    ['class' => 'dnav-item nav-link', 'id' => "li_Integrantes"]
+                    'Novedades',
+                    ['controller' => 'Novedades', 'action' => 'index', '?' => ['Categoria' => 'Integrantes']],
+                    ['class' => 'dnav-item nav-link', 'id' => "li_Novedades"]
                 );
                 ?>
 
