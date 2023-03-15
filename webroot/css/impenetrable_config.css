@@ -737,3 +737,88 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
     font-size: xxx-large;
 }
 
+
+/*ANIMAION FOR MAPS */
+
+.animated-icon{
+    transition: all 2s ease 0s !important;
+}
+
+.popup-impenetrable .leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background: rgb(0 58 9 / 80%) !important;
+    color: #fff;
+    box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
+}
+
+.popup-impenetrable-resumen .leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    color: #000000;
+    box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
+}
+
+
+.icons-list{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tr-list-events{
+    padding: 5px 5px 5px 5px;
+    background-color: #f3f6ff;
+    border: solid 1px #dbdbdb;
+}
+
+.card{
+    border: solid 1px #094109;
+}
+
+.img-header-card{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card:hover{
+    background: #c2fbd7;
+    border: solid 2px #a3bea3;
+}
+
+
+/* STYLOS para los contenedores del sidebar left */
+
+.div-label-left-container{
+    display: block;
+    padding: 5px 5px 5px 5px;
+    border: solid 1px #b9b9b9;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.div-label-left-container > div{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 5px;
+    align-items: center;
+}
+
+.div-label-left-container > div > .div-img{
+   display: inherit;
+    width: 20%;
+    justify-content: center;
+}
+.div-label-left-container > div > span{
+    width: 60%;
+    justify-content: center;
+}
+
+.div-label-left-container > div > .div-btn{
+    display: inherit;
+    width: 20%;
+    justify-content: center;
+}
+.img-label{
+    width: 50px;
+    height: 50px;
+}
+.span-name{
+    word-wrap: break-word;
+}

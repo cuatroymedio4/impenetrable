@@ -10,7 +10,7 @@
         <div class="row justify-content-md-center h-100">
             <div class="card-wrapper wow zoomIn">
                 <div class="brand">
-                    <img src="../img/integrantes/user_hombre" alt="logo">
+                    <img src="../img/integrantes/user_hombre.png" alt="logo">
                 </div>
 
                 <div class="card fat">

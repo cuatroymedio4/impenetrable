@@ -34,6 +34,7 @@
                                 'placeholder' => '', 'required', 'id' => 'textarea']) ?>
                         </div>
                         </br>
+
                         <div class="form-group m-0">
                             <?= $this->Form->button('Guardar', ['class' => 'btn btn-large btn-success float-right',
                                 'id' => 'boton_submit']) ?>

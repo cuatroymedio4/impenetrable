@@ -92,7 +92,7 @@ class AppController extends Controller
      */
     public function isAuthorized($user)
     {
-        if(isset($user['role']) and ($user['role'] === 'admin'))
+        if(isset($user['role']) and ($user['role'] === 'Admin'))
         {
             return true;
         }
@@ -100,4 +100,13 @@ class AppController extends Controller
         return false;
 
     }
+
+    public function json($data){
+
+        //$this->response->getType('json');
+        //$this->response->withStringBody(json_encode($data));
+        return $this->response->withType('application/json')->withStringBody(json_encode($data));
+
+    }
+
 }

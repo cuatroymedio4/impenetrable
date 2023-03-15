@@ -67,7 +67,24 @@
                     </div>
                 </div>
 
-                <a href="project.html" class="nav-item nav-link">Cartografía</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_admin_Mapainteractive">Mapa Interactivo</a>
+                    <div class="dropdown-menu m-0">
+                        <?=  $this->Html->link(
+                            'Localidades',
+                            ['controller' => 'Localidades', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                        <?=  $this->Html->link(
+                            'Puntos de Interes',
+                            ['controller' => 'PuntosInteres', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                    </div>
+                </div>
+
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
         </div>

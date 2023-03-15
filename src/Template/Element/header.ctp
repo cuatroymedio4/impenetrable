@@ -56,7 +56,13 @@
                     ['class' => 'dnav-item nav-link', 'id' => "li_Documentacion"]
                 );
                 ?>
-                <a href="project.html" class="nav-item nav-link">Cartografía</a>
+
+                <?=  $this->Html->link(
+                    'Cartografía',
+                    ['controller' => 'Cartography', 'action' => 'index', '?' => ['Categoria' => 'Cartography']],
+                    ['class' => 'dnav-item nav-link', 'id' => "li_Cartography"]
+                );
+                ?>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
