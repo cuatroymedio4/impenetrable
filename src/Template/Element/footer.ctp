@@ -1,10 +1,10 @@
 <!-- main-footer -->
 <footer class="main-footer">
-    <div id="container_footer" class="container-xxl py-5 padding-15">
+    <div id="container_footer" class="container-xxl py-5 padding-5">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="logo-widget footer-widget">
-                        <figure class="footer-logo"><a href="https://iighi.conicet.gov.ar" target="_blank"><img src="img/footer-logo.png" alt=""></a></figure>
+                        <figure class="footer-logo text-center"><a href="https://iighi.conicet.gov.ar" target="_blank"><img src="img/footer-logo.png" alt=""></a></figure>
                         <div class="text">Instituto de Investigaciones Geohistóricas (IIGHI)<br><small>Consejo Nacional de Investigaciones Científicas y Técnicas- Universidad Nacional del Nordeste</small></div>
                         <ul id="icons-media" class="footer-social clearfix">
                             <li><a href="https://www.facebook.com/IIGHIChaco/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>

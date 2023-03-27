@@ -4,8 +4,8 @@
 <header class="main-header">
     <nav class="navbar navbar-expand-lg navbar-light navbar-impenetrable px-4 px-lg-5 py-3 py-lg-0 nav-backgorund">
         <a href="/impenetrable" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-tree me-2"></i><span class="fs-5">EL IMPENETRABLE</span></h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
+            <!-- <h1 class="m-0"><i class="fa fa-tree me-2"></i><span class="fs-5">EL IMPENETRABLE</span></h1>-->
+            <img id="logo" src="../img/logo-impenetrable-blanco.png" alt="Logo"> 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -67,6 +67,28 @@
             </div>
         </div>
     </nav>
+    <script>
+        $(function(){
+        $(document).scroll(function(){
+            if($(this).scrollTop() > 1) {
+                $('#logo').attr('src','img/logo-impenetrable.png')
+            }
+            if($(this).scrollTop() < 1) {        
+             $('#logo').attr('src','img/logo-impenetrable-blanco.png');
+            }
+        });
+    });
+    $(function(){
+    $(window).on("resize", function(){
+          if($(window).width() < 720){
+              $('#logo').attr("src","img/logo-impenetrable.png");
+          }
+          else{
+              $('#logo').attr("src","img/logo-impenetrable-blanco.png");
+          }
+        })
+    });
+    </script>
 </header>
 
 <!-- Navbar & Hero End -->

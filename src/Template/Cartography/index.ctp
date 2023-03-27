@@ -11,7 +11,7 @@
             <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <i class="fa fa-2x"><img src="img/history.png" alt="alternatetext" width="50px" height="50px"></i>
+                        <i class="fa fa-2x"><img src="img/icon-10.png" alt="alternatetext" width="80px" height="80px"></i>
 
                     </div>
                     <h5 class="mb-3">Mapa Interactivo</h5>
@@ -29,9 +29,9 @@
             <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <img src="img/geography.png" alt="alternatetext" width="50px" height="50px">i>
+                        <img src="img/icon-11.png" alt="alternatetext" width="80px" height="80px">
                     </div>
-                    <h5 class="mb-3">Geografía</h5>
+                    <h5 class="mb-3">Centro de Descargas</h5>
                     <p style="text-align: justify;">Estudiamos la potencialidad ambiental del Impenetrable. Particularmente las formaciones biogeográficas y
                         geomorfológicas del Impenetrable como características esenciales que distinguen al Impenetrable
                         como espacio único de gran interés turístico.</p>
