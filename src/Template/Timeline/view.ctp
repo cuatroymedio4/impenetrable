@@ -91,9 +91,9 @@
                     <li><a href="#0" data-date="30/08/2014">30 Ago</a></li>
                     <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
                     <li><a href="#0" data-date="01/11/2014">1 Nov</a></li>
-                    <!--<li><a href="#0" data-date="10/12/2014">10 Dic</a></li>
+                    <li><a href="#0" data-date="10/12/2014">10 Dic</a></li>
                     <li><a href="#0" data-date="19/01/2015">29 Ene</a></li>
-                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>-->
+                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
                 </ol>
 
                 <span class="filling-line" aria-hidden="true"></span>
