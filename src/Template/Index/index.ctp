@@ -7,9 +7,9 @@
 <div class="container-xxl py-5 bg-success impenetrable-backgound mb-5">
     <div class="container my-5 py-5 px-lg-5">
         <div class="row g-5 py-5">
-            <div class="col-lg-6 text-center text-lg-start div-opacity-70 padding-top-bottom-20">
+            <div class="pt-4 px-5 col-lg-6 text-center text-lg-start div-opacity-70 ">
                 <h1 class="text-white mb-4 animated zoomIn font-impenetrable">
-                    EL IMPENETRABLE:
+                    <span style="border-bottom: 3px solid #FF4141; line-height: 48px;">EL IMPENETRABLE:</span>
                     <span class="fs-5">UN ITINERARIO CULTURAL EN TORNO AL AMBIENTE, LOS GRUPOS HUMANOS Y SU CULTURA LOCAL</span>
                 </h1>
 
@@ -50,20 +50,20 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <i class="fa fa-2x"><img src="img/history.png" alt="alternatetext" width="50px" height="50px"></i>
+                        <i class="fa fa-2x"><img src="img/icon-1.png" alt="alternatetext" width="80px" height="80px"></i>
 
                     </div>
                     <h5 class="mb-3">Historia</h5>
                     <p style="text-align: justify;">Investigamos los procesos históricos, las migraciones, desplazamientos y la configuración de los distintos emplazamientos
                         en el espacio del Impenetrable en varias dimensiones de análisis.</p>
-                    <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                    <a class="btn px-3 mt-auto mx-auto" href="">Leer más...</a>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <img src="img/geography.png" alt="alternatetext" width="50px" height="50px">i>
+                        <img src="img/icon-5.png" alt="alternatetext" width="80px" height="80px">
                     </div>
                     <h5 class="mb-3">Geografía</h5>
                     <p style="text-align: justify;">Estudiamos la potencialidad ambiental del Impenetrable. Particularmente las formaciones biogeográficas y
@@ -75,7 +75,7 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <i class="fa fa-2x"><img src="img/anthropology.png" alt="alternatetext" width="50px" height="50px"></i>
+                        <i class="fa fa-2x"><img src="img/icon-9.png" alt="alternatetext" width="80px" height="80px"></i>
                     </div>
                     <h5 class="mb-3">Antropología</h5>
                     <p style="text-align: justify;">Nos interesa acercarnos a los grupos humanos que habitan el Impenetrable con el fin de
@@ -87,7 +87,7 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <i class="fa fa-2x"><img src="img/linguistica.png" alt="alternatetext" width="60px" height="60px"></i>
+                        <i class="fa fa-2x"><img src="img/icon-2.png" alt="alternatetext" width="80px" height="80px"></i>
                     </div>
                     <h5 class="mb-3">Lingüística</h5>
                     <p style="text-align: justify;">Los aportes de esta perspectiva permitirán describir y caracterizar
@@ -99,7 +99,7 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                     <div class="service-icon flex-shrink-0">
-                        <i class="fa fa-2x"><img src="img/turismo.png" alt="alternatetext" width="60px" height="60px"></i>
+                        <i class="fa fa-2x"><img src="img/icon-8.png" alt="alternatetext" width="80px" height="80px"></i>
                     </div>
                     <h5 class="mb-3">Turismo</h5>
                     <p style="text-align: justify;">Nos proponemos Identificar las potencialidades turísticas del Impenetrable a

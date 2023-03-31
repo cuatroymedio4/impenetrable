@@ -86,7 +86,7 @@ let layerControl = L.control.layers(base, null).addTo(map);
 
 
 
-const sidepanelLeft = L.control.sidepanel('mySidepanelLeft', {
+/*const sidepanelLeft = L.control.sidepanel('mySidepanelLeft', {
     tabsPosition: 'left',
     startTab: 'tab-5'
 }).addTo(map);
@@ -96,7 +96,7 @@ const sidepanelRight = L.control.sidepanel('mySidepanelRight', {
     panelPosition: 'right',
     tabsPosition: 'top',
     startTab: 'tab-1'
-}).addTo(map);
+}).addTo(map);*/
 
 
 //ES la reserva
@@ -174,10 +174,22 @@ function viewMoreBtnLocalidad(bnt)
             showPointOfInteresInPanel(id_loc);
         }
 
-    })
+    })    
 
 }
 
+function isMobile(window)
+{
+  $(window).on("resize", function(){
+        if($(window).width() < 740){
+            $('#sidebar').addClass('collapsed');
+        }
+        else{
+            $('#sidebar').removeClass('collapsed');
+            $('#tab-1').addClass('active');
+        }
+    }) 
+};
 
 function changeColorBoxLocalidad(id)
 {
